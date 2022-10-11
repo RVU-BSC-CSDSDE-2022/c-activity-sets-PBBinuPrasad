@@ -1,5 +1,5 @@
 #include <stdio.h>
- sum_func(int a,int b, int*sum);
+ int sum_func(int a,int b);
 
 
 int main() {
@@ -13,11 +13,11 @@ int main() {
 
   return 0;
   }
- sum_func(int a, int b, int *sum)
+ int sum_func(int a, int b)
 {
-  
-  *sum=a+b;
- // return sum;
+  int sum;
+  sum=a+b;
+  return sum;
 } 
 
     
