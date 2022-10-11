@@ -1,5 +1,5 @@
 #include <stdio.h>
-int sum_func(int a,int b);
+ sum_func(int a,int b, int*sum);
 
 
 int main() {
@@ -8,16 +8,16 @@ int main() {
   scanf("%d", &a);
   printf("Enter second number");
   scanf("%d", &b);
-  sum=sum_func(a,b);
+  sum_func(a,b,&sum);
   printf("%d", sum);
 
   return 0;
   }
-  int sum_func(int a, int b)
+ sum_func(int a, int b, int *sum)
 {
-  int sum;
-  sum=a+b;
-  return sum;
+  
+  *sum=a+b;
+ // return sum;
 } 
 
     
