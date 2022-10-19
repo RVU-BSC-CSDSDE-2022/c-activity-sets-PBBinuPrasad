@@ -1,20 +1,21 @@
 #include <stdio.h>
-void change(int *x , int *y);
+ int sum_func(int *x,int *y , int *sum);
 
 int main() {
-  int x,y;
-  x= 200 , y= 300;
-  change(&x , &y);
-  printf("x is %d y is %d",x,y);
-
+  int x, y,sum;
+  printf("Enter the first number");
+  scanf("%d", &x);
+  printf("Enter second number");
+  scanf("%d", &y);
+  sum_func(&x, &y, &sum);
+  printf("%d", sum);
   return 0;
-  
-}
+  }
 
+  sum_func(int *x, int *y, int *sum)
 
-void change(int *x , int *y)
 {
-  *x= 400;
-  *y= 700;
-
-}
+  
+  *sum=*x+*y;
+  
+} 
