@@ -1,7 +1,7 @@
 #include<stdio.h>
 struct complex {
-	float real;
-	float img;
+	int real;
+	int img;
 };
 typedef struct complex Complex;
 
