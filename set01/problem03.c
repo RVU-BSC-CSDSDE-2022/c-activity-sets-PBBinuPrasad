@@ -1,13 +1,22 @@
 #include <stdio.h>
+# include <stdlib.h>
  int sum_func(int a,int b);
 
 
 int main() {
   int a, b,sum;
   printf("Enter the first number");
-  scanf("%d", &a);
+  if(scanf("%d", &a)!=1)
+    {
+    printf("error");
+    exit(0);
+    }
   printf("Enter second number");
-  scanf("%d", &b);
+  if(scanf("%d", &b)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
   sum=sum_func(a,b);
   printf("%d", sum);
 
