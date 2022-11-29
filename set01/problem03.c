@@ -1,7 +1,5 @@
 #include <stdio.h>
 # include <stdlib.h>
- int sum_func(int a,int b);
-
 
 int main() {
   int a, b,sum;

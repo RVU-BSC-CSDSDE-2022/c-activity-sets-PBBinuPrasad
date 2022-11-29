@@ -1,12 +1,21 @@
 #include <stdio.h>
+# include <stdlib.h>
  int sum_func(int *x,int *y , int *sum);
 
 int main() {
   int x, y,sum;
   printf("Enter the first number");
-  scanf("%d", &x);
+  if(scanf("%d", &x)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
   printf("Enter second number");
-  scanf("%d", &y);
+  if(scanf("%d", &y)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
   sum_func(&x, &y, &sum);
   printf("%d", sum);
   return 0;
